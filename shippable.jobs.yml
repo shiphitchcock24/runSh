@@ -5,7 +5,7 @@ jobs:
     steps:
       - IN: sample-script121
      # - IN: env
-      - IN: triggertest3
+      - IN: triggertest12
       - TASK:
         - script: ./IN/ sample-script121/gitRepo/echo.sh
       #  - script: pwd
@@ -15,16 +15,16 @@ jobs:
         - script: echo "$n1"
         - script: echo 'new'
         #- script: "sudo apt-get install tree"
-    on_success:
-      #- uname -a
-      - NOTIFY: myEmail2
-      - NOTIFY: mySlack2
-      - script: echo 'infra test'
-      - script: echo 'newtesting success'
-    on_failure:
-      - script: echo 'testing1 failure'
-      - script: echo 'failure runSh'
-      - NOTIFY: mySlack2
+    # on_success:
+    #   #- uname -a
+    #   - NOTIFY: myEmail2
+    #   - NOTIFY: mySlack2
+    #   - script: echo 'infra test'
+    #   - script: echo 'newtesting success'
+    # on_failure:
+    #   - script: echo 'testing1 failure'
+    #   - script: echo 'failure runSh'
+    #   - NOTIFY: mySlack2
       
  # - name: runShk8
   #  type: runSh
