@@ -20,7 +20,7 @@ resources:
     #  recipients:
      #   - "#random"
       # - "@pvt-channel"
-
+ 
   # #- name: myEmail2
   #   type: notification
   #   integration: email
