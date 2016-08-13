@@ -7,7 +7,7 @@ jobs:
      # - IN: env
       - IN: triggertest12
       - TASK:
-        - script: ./IN/ sample-script121/gitRepo/echo.sh
+        - script: ./IN/sample-script121/gitRepo/echo.sh
       #  - script: pwd
        # - script: ls
         - script: "node --version"
